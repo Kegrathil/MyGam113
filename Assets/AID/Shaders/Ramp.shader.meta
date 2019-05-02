@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 634eb079a484dfc4ab2cf4dff0a2da38
+timeCreated: 1495872812
+licenseType: Free
+ShaderImporter:
+  defaultTextures:
+  - _Diffuse: {instanceID: 0}
+  - _Normal: {instanceID: 0}
+  - _DiffuseRamp: {fileID: 2800000, guid: cfe141e225cb93c4f8a483bf8e50e81b, type: 3}
+  - _SpecRamp: {fileID: 2800000, guid: cfe141e225cb93c4f8a483bf8e50e81b, type: 3}
+  - _RimRamp: {fileID: 2800000, guid: e3478c76b1ec6e5409824524cafaa7f1, type: 3}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

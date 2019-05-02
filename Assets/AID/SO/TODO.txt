@@ -1,0 +1,69 @@
+Demo moves to tests
+
+coroutine runner
+system base
+audio doesn't need the enum anymore
+confirm that pool makes sense with current SO setup
+var doesn't need to show current value if its not in play mode
+
+
+gameobject var?
+
+extvars, put gen vars in sub folder rather than sub SO, they are harder for users to deal with when sub SO.
+
+external vars
+?should move to smarter file container
+should be able to manually add more types in the editor and push those back out to a csv, etc.?
+-YES, use the editor script to be able to add types based on names and SO types in the handlers list
+--need a list/button for adding new items
+
+external vars col
+-needs to be able to make all extvars reload from live data
+
+-
+
+FileSO
+-backed by one of;
+--local textasset
+--file in Resources
+--file in StreamingAssets
+-can move to persist and load from there if present
+-name to store it as in persist or streamingassets
+-URL for live data
+it should version, how
+-can't rely on csv, they aren't all going to be that
+-can't do file names some urls won't allow it
+prepare
+-checks for local files, if not present copies from internal
+CheckRemote
+-hits remote url to determine if it is valid
+Download
+-dls remote file
+
+
+FileManifestSO 
+-collection of all FileSO
+-current manifest
+-temp maifest
+-
+
+Refactor filedownloadwindow so we can use it at runtime too
+
+Trackable SO
+in 'debug' you mark that you are using a trackable SO, via your GO
+TrackableSO
+-StartTracking(against GO)
+-StopTracking(against GO)
+Editor to show ping all tracked userss
+
+
+ITrackableSOUser
+-GetGO
+-GetTrackableSO
+-Register
+-Unregister
+
+
+TrackableSOUserBeh
+-OnEnable
+-OnDisabble
